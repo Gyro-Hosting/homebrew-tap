@@ -5,27 +5,26 @@
 class Gyro < Formula
   desc "Official command-line interface for Gyro Hosting"
   homepage "https://www.gyrohosting.com/developers/"
-  version "1.26.1"
   license "MPL-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v#{version}/gyro_#{version}_darwin_arm64.tar.gz"
+      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.26.1/gyro_1.26.1_darwin_arm64.tar.gz"
       sha256 "416347fc7108384774e99737b3f1f6dde00ddd2989f18de66f712b509e63d47c"
     end
     on_intel do
-      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v#{version}/gyro_#{version}_darwin_amd64.tar.gz"
+      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.26.1/gyro_1.26.1_darwin_amd64.tar.gz"
       sha256 "b717e1d8521235d74c4a261140d3d61780d426c8badc6026f48947c11dc0eb1a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v#{version}/gyro_#{version}_linux_arm64.tar.gz"
+      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.26.1/gyro_1.26.1_linux_arm64.tar.gz"
       sha256 "fe7d7a0adce64eabc20b31909f8ae29f952a93fc9df4cccd6dd6615bc8608fd5"
     end
     on_intel do
-      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v#{version}/gyro_#{version}_linux_amd64.tar.gz"
+      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.26.1/gyro_1.26.1_linux_amd64.tar.gz"
       sha256 "0221622a4b5e1388d9a1878b901aa3d76c3fccf01e43ea0da36d44ca6fdd6199"
     end
   end

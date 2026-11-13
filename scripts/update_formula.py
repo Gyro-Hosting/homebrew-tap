@@ -54,7 +54,7 @@ def main():
             sys.exit(f"missing checksum for {fn}")
         blocks.setdefault(os_, []).append(
             f"    on_{cpu} do\n"
-            f"      url \"https://github.com/{REPO}/releases/download/v#{{version}}/gyro_#{{version}}_{suf}.tar.gz\"\n"
+            f"      url \"https://github.com/{REPO}/releases/download/{tag}/gyro_{ver}_{suf}.tar.gz\"\n"
             f"      sha256 \"{hashes[fn]}\"\n"
             f"    end\n")
     body = f'''# typed: false
@@ -64,7 +64,6 @@ def main():
 class Gyro < Formula
   desc "Official command-line interface for Gyro Hosting"
   homepage "https://www.gyrohosting.com/developers/"
-  version "{ver}"
   license "MPL-2.0"
 
   on_macos do

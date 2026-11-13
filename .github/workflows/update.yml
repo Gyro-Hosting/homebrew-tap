@@ -32,7 +32,7 @@ jobs:
       - name: Commit
         run: |
           if git diff --quiet; then echo "no change"; exit 0; fi
-          v=$(sed -n 's/^  version "\(.*\)"/\1/p' Formula/gyro.rb)
+          v=$(grep -m1 -o 'gyro_[0-9.]*_darwin' Formula/gyro.rb | sed 's/gyro_\(.*\)_darwin/\1/')
           git config user.name "gyro-release-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -am "gyro ${v}"
