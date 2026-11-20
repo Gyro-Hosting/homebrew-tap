@@ -9,23 +9,23 @@ class Gyro < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.41.1/gyro_1.41.1_darwin_arm64.tar.gz"
-      sha256 "6e6371a4a953aebe0d3200edeb423d6d55f66818aa6099e42074df5a3b5261c6"
+      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.42.0/gyro_1.42.0_darwin_arm64.tar.gz"
+      sha256 "21f9a7f0f5de5249a3bcea4243bb3b04cc382d52927e4654b05d3525018b3ea4"
     end
     on_intel do
-      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.41.1/gyro_1.41.1_darwin_amd64.tar.gz"
-      sha256 "fb0f40c13cfc527ad52f673750d8514e0deac38f544a694de236018fa2ff5bda"
+      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.42.0/gyro_1.42.0_darwin_amd64.tar.gz"
+      sha256 "66525c4226960b5e000a04a915dac7602f69031584be0beb0e96b961133a26c5"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.41.1/gyro_1.41.1_linux_arm64.tar.gz"
-      sha256 "0ae421c7a16acf1195cc0a84560dbac8a67e1102a00837f3f7097e50e2a57346"
+      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.42.0/gyro_1.42.0_linux_arm64.tar.gz"
+      sha256 "4a8c247685504d4a2ff49daddc04899ba3052b4550be699f4dc509c4a537c076"
     end
     on_intel do
-      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.41.1/gyro_1.41.1_linux_amd64.tar.gz"
-      sha256 "a1cb4571b529421981fe05f7df67b3cf952750030235352c888f39c380ef1e4f"
+      url "https://github.com/Gyro-Hosting/gyro-cli/releases/download/v1.42.0/gyro_1.42.0_linux_amd64.tar.gz"
+      sha256 "4dd41dc99ff9d11aa38b8f9d31f4ae822dd7ae87d423708bfb81606c25c65275"
     end
   end
 
